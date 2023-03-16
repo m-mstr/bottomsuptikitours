@@ -1,0 +1,514 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background: #ccc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+
+html,body {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background: aliceblue;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 0px -2px 8px rgb(0 0 0 / 0.4);
+    overflow-x: hidden;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+
+/* ------------ LOGO HEADER ------------ */
+
+/* ------------ LOGO HEADER ------------ */
+.logo.header {
+    display: block;
+    text-align: center;
+    box-shadow: 0px 8px 8px -6px rgb(0 0 0 / 0.4);
+    z-index: 1;
+    position: relative;
+}
+
+
+/* ------------ NAVBAR ------------ */
+
+
+nav {
+    background-color: rgb(219, 219, 219);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 10px 10px 0px rgb(0 0 0 / 0.4);
+}
+
+.brand-title h4 {
+    color: rgb(80, 80, 80);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-family: 'Schoolbell', cursive;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 30px;
+    vertical-align: baseline;
+}
+
+.navlinks ul li {
+    display: inline-block;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10px 10px;
+    position: relative;
+} 
+
+.navlinks ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: aliceblue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after {
+    width: 100%;
+}
+
+.navlinks li a { 
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.burger {
+    display: none;
+}
+
+.x {
+    display: none;
+}
+
+/* ------------ BOAT PICTURE ------------ */
+
+
+.boat-image-block {
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+.boat {
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+.boat:hover {
+    opacity: 100%;
+}
+
+
+/* ------------ SPECIALS ------------ */
+
+
+.specials-box {
+    box-shadow: 0 -4px 6px -4px rgb(0 0 0 / 0.4);
+}
+
+.specials {
+    text-align: center;
+    padding-top: 25px;
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 450;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.specials-col {
+    flex-basis: 32%;
+    background: #ccc;
+    border-radius: 10px;
+    margin-bottom: 6%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 450;
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.specials-col:hover {
+    box-shadow: 0 0 20px -3px rgb(0 0 0 / 0.4);
+}
+
+
+
+/* ------------ WEEKLY ------------ */
+
+.weekly-box {
+    background-color: #ccc;
+}
+.weekly {
+    text-align: center;
+    padding-top: 25px;
+    position: relative;
+}
+
+.weekly h1 {
+    font-size: 36px;
+    font-weight: 450;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.weekly .row {
+    width: 95%;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weekly-col {
+    flex-basis: 32%;
+    background: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 6%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.weekly h3 {
+    text-align: center;
+    font-weight: 450;
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.weekly-col:hover {
+    box-shadow: 0 0 20px -3px rgb(0 0 0 / 0.4);
+}
+
+/* ------------ ABOUT ------------ */
+
+.about {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: space-around;
+}
+.about .row {
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    width: 50%;
+}
+
+.about-col h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: none;
+    padding-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+}
+.about-col p {
+    text-align: center;
+}
+
+.about-col p:first-of-type {
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.about-col p:last-of-type {
+    padding-top: 10px;
+    font-style: italic;
+}
+
+/* ------------ LOCATION & MAP ------------ */
+
+.container.map-col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info p {
+    text-transform: uppercase;
+}
+
+.info {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+iframe {
+    size: auto;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+}
+
+/* ------------ BOOKING ------------ */
+
+.booking {
+    padding-top: 25px;
+    padding-bottom: 100px;
+    background: #272727;
+    color: white;
+}
+
+
+
+.booking h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+
+/* TABLET */
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 0px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .brand-title {
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    .navlinks li a {
+        letter-spacing: 3px;
+        font-size: 15px;
+    }
+}
+
+
+
+/* ------------ MOBILE PHONE ------------ */
+
+
+
+@media screen and (max-width: 480px) {
+
+    /*  ------------ NAVBAR ------------ */
+
+    .navlinks {
+        display: flex;
+        position: fixed;
+        inset: 0 0 0 50%;
+        background: hsl(0, 0%, 80%);
+        z-index: 1000;
+        text-align: left;
+        transition: 0.5s ease-out;
+        transform: translateX(100%);
+    }
+
+    .navlinks[data-visible = "true"] {
+        transform: translateX(0%);
+    }
+
+    .navlinks li {
+        opacity: 0;
+    }
+
+    .navlinks ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+
+    @supports (backdrop-filter: blur(1rem)) {
+        .navlinks {
+            background: hsl(0 0% 80% / 0.5);
+        backdrop-filter: blur(1rem);
+        }
+    }
+
+    .navlinks ul {
+        padding: 6px;
+    }
+
+    .burger {
+        z-index: 9999;
+        display: flex;
+        color: black;
+        font-size: 2em;
+        cursor: pointer;
+        position: fixed;
+        height: 28px;
+        width: 28px;
+        top: 1.5rem;
+        right: 1.5rem;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 15%;
+        box-sizing: border-box;
+        background-color: #ccc;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    }
+
+    .burger[aria-expanded = "true"] {
+        display: none;
+    }
+
+    .x[aria-expanded = "true"]{
+        z-index: 9999;
+        display: flex;
+        color: black;
+        font-size: 2em;
+        cursor: pointer;
+        position: fixed;
+        height: 28px;
+        width: 28px;
+        top: 1.5rem;
+        right: 1.5rem;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @keyframes navLinkFadein {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes navLinkFadeOut {
+        from {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        to {
+            opacity: 0;
+            transform: translateX(5px);
+        }
+    }
+
+    /* ------------ PERSONAL ------------ */
+
+
+    .brand-title {
+        font-size: 15px;
+    }
+
+    .logo.container img {
+        width: 150px !important;
+        height: auto;
+    }
+
+
+    /* ------------ SPECIALS ------------ */
+
+    .row {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    /* ------------ WEEKLY ------------ */
+
+    .weekly .row {
+        flex-direction: column;
+    }
+
+    .weekly h1 {
+        font-size: 30px;
+    }
+
+    .weekly h3 {
+        font-size: 15px;
+    }
+
+
+    /* ------------ ABOUT ------------ */
+
+    .about {
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .about-col {
+        text-align: center;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        padding-bottom: 25px;
+        flex-direction: column;
+    }
+
+    /* ------------ LOCATION & MAP ------------ */
+
+    iframe {
+        width: 90%;
+        border-radius: 25px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    }
+}
