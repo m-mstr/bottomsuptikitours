@@ -26,7 +26,7 @@ navClose.addEventListener('click', () => {
     }
 
     navlinks.forEach((link, index) => {
-        link.style.animation = `navLinkFadeOut 0.5s ease forwards ${index / 5 + 0.1}`;
+        link.style.animation = `navLinkFadeOut 0.5s ease forwards ${index / 5 + 0.1}s`;
     });
 });
 

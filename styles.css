@@ -14,6 +14,10 @@ html,body {
     scroll-behavior: smooth !important;
 }
 
+html:focus-within {
+    scroll-behavior: smooth !important;
+}
+
 body {
     background: aliceblue;
     margin-top: 0px;
@@ -375,11 +379,13 @@ iframe {
     color: white;
 }
 
-
-
 .booking h1 {
     text-align: center;
     text-transform: capitalize;
+}
+
+.booking a {
+    color: #4d9cca;
 }
 
 
@@ -412,6 +418,22 @@ iframe {
 
 
 @media screen and (max-width: 480px) {
+
+    /*  ------------ FACEBOOK ------------ */
+
+    .fb-row {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+    .fb-text-col {
+        padding-bottom: 20px;
+    }
+
+    .plugin-container-col {
+        width: 400px;
+    }
 
     /*  ------------ NAVBAR ------------ */
 
@@ -539,6 +561,10 @@ iframe {
 
     h3 {
         font-size: 15px;
+    }
+
+    .special-occasions h2 {
+        font-size: 11px;
     }
 
     /* ------------ WEEKLY ------------ */
