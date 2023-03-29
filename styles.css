@@ -64,7 +64,6 @@ body {
     padding: 20px 0px 20px 0;
 }
 
-
 /* ------------ NAVBAR ------------ */
 
 
@@ -181,6 +180,12 @@ nav {
     height: auto;
     object-fit: cover;
     object-position: bottom;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    transition: 0.5s;
+}
+
+.fb-container-col img:hover {
+    border: 5px white solid;
 }
 
 /* ------------ SPECIALS ------------ */
@@ -390,24 +395,46 @@ h2 {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 
+/* -------- CANCELLATION POLICY ------------ */
+
+.cancel-box {
+    background: #ccc;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.cancel {
+    padding: 10px 25px 25px 25px;
+}
+
+.cancel h2 {
+    font-size: 25px;
+}
+
 /* ------------ BOOKING ------------ */
 
-.booking-box {
+.button {
+    display: flex;
+    justify-content: center;
     padding-top: 25px;
-    padding-bottom: 100px;
-    background: #272727;
-    color: white;
 }
 
-.booking h1 {
-    text-align: center;
-    text-transform: capitalize;
+.btn {
+    position: relative;
+    margin: 0;
+    background-color: #272727;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 0 0 20px -3px rgb(0 0 0 / 0.8);
+    z-index: 10;
 }
-
-.booking a {
-    color: #4d9cca;
-}
-
 
 
 /* TABLET */
@@ -443,11 +470,11 @@ h2 {
 
 @media screen and (max-width: 480px) {
 
-    /*  ------------ FACEBOOK ------------ */
-
-    body {
-        position: relative !important;
+    html {
+        overflow-x: hidden !important;
     }
+
+    /*  ------------ FACEBOOK ------------ */
 
     .fb-row {
         flex-direction: column;
@@ -461,10 +488,10 @@ h2 {
 
     .fb-container-col {
         display: block;
+        width: 90%;
     }
 
     .fb-container-col img {
-        width: 50%;
         height: auto;
     }
 
@@ -475,7 +502,7 @@ h2 {
         position: fixed;
         inset: 0 0 0 50%;
         background: hsl(0, 0%, 80%);
-        z-index: 1000;
+        z-index: 999;
         text-align: left;
         transition: 0.5s ease-out;
         transform: translateX(100%);
@@ -572,12 +599,12 @@ h2 {
     /* ------------ PERSONAL ------------ */
 
 
-    .brand-title {
-        font-size: 15px;
+    .brand-title h4 {
+        font-size: 20px;
     }
 
     .logo.container img {
-        width: 150px !important;
+        width: 150px;
         height: auto;
     }
 

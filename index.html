@@ -45,7 +45,7 @@
                     <li class="active"><a href="#home">Home</a></li>
                     <li ><a href="#prices">Prices</a></li>
                     <li ><a href="#about">About</a></li>
-                    <li ><a href="#booking">Booking</a></li>
+                    <li > <a href="#booking">Booking</a></li>
                     <li ><a href="https://www.facebook.com/bottomsuptikitours"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                         </svg></a></li>
@@ -178,7 +178,7 @@ Add Contact Information -->
                 <div class="row">
                     <div class="about-col">
                         <h1>About Bottoms Up Tiki Tours</h1>
-                        <p>We are a 40ft Tiki Boat licensed for 20 passengers - US Coast Guard inspected and approved.Great for family, work/office events, special occasions and more!</p>
+                        <p>We are a 40ft Tiki Boat licensed for 20 passengers - US Coast Guard inspected and approved. Great for family, work/office events, special occasions and more!</p>
                         <p>-Special departure & return locations available upon request.-</p>
                         <p>All cruises BYOB. Bring your own food/snacks. We also do catering for an extra charge.</p>
                     </div>
@@ -205,12 +205,20 @@ Add Contact Information -->
             </div>
         </section>
 
-        <section id="booking" class="booking-box">
-            <div class="booking fade">
-                <h1>Booking</h1>
-                <h2>coming soon... <br>
-                Call <a href="tel:4438801731">(443)880-1731</a></h2>
+        <section class="cancel-box">
+            <div class="cancel">
+                <h2>Cancellation Policy</h2>
+                <p><em>Customers must cancel within <b>7 days</b> of the scheduled tour. Anyday after the 7 day time period has passed, you will recieve a voucher for a future tour. Customers will also recieve a full refund for any operator cancellations due to inclimate weather conditions or any other unforeseem circumstances. <b>No-shows will be charged full price.</b> To cancel, contact us by phone to inquire about a cancellation.</em><p>
             </div>
-        </section>       
+
+             <!-- FareHarbor book button -->
+            <div id="booking" class="button">
+                <a id="booking" href="https://fareharbor.com/embeds/book/bottomsuptikitours/?full-items=yes"><button type="button" class="btn">Book Now!</button></a>
+            </div>
+        </section>
+
+        <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->
+        <script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
+
     </body>
 </html>
