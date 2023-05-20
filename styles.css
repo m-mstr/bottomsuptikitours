@@ -1056,13 +1056,18 @@ nav.scrolled li a {
 
     /* ------------ CONTACT & MAP ------------ */
 
-    iframe {
-        width: 90%;
+    .container-map iframe {
+        width: 40vw;
+        height: 25vh;
         border-radius: 25px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
     }
 
-    /* ------------ CANCELL ------------ */
+    .info {
+        font-size: 2.5vw;
+    }
+
+    /* ------------ CANCEL ------------ */
 
     .cancel h2 {
         font-size: 2vh;
