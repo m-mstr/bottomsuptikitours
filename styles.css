@@ -93,7 +93,7 @@ body {
 }
 
 .logo.header img {
-    width: 10.1vw;
+    width: 15vw;
     height: auto;
 }
 
@@ -717,7 +717,7 @@ nav.scrolled li a {
     }
 
     .logo.header img {
-        width: 20vw;
+        width: 45vw;
         height: auto;
     }
 
