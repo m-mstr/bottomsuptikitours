@@ -537,32 +537,40 @@ nav.scrolled li a {
     padding-top: 25px;
 }
 
+.button-2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
 .btn {
     margin: 0;
     background-size: 200% auto;
     background: linear-gradient( to right, #f6bc00 51%, #ff8800 100%);
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     color: aliceblue;
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
     height: 6vh;
-    width: 10.1vw;
+    width: 12vw;
     cursor: pointer;
     z-index: 10;
     transition: 0.5s;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 
 .btn:hover {
     background-position: right center;
+    color: rgb(0 0 0 / 0.8);
 }
 
 
 /* ------------ CONTACT & MAP ------------ */
 
 .contact-box {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .contact-col {
@@ -580,6 +588,7 @@ nav.scrolled li a {
 }
 
 .contact-text h1 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     padding: 20px;
 }
@@ -623,12 +632,11 @@ nav.scrolled li a {
 .info {
     font-size: 20px;
     text-align: center;
-    padding: 25px;
 }
 
 .container-map iframe {
-    height: 300px;
-    width: 400px;
+    height: 35vh;
+    width: 30vw;
     border-radius: 25px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
