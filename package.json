@@ -1,0 +1,17 @@
+{
+  "name": "bottomsuptikitours",
+  "version": "1.0.0",
+  "description": "this is a business website I am building for a family friend. Just using this as a host.",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-mstr/bottomsuptikitours.git"
+  },
+  "author": "Ronald Jimmy Headrick III <rockbladej99@gmail.com>",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/m-mstr/bottomsuptikitours/issues"
+  },
+  "homepage": "https://github.com/m-mstr/bottomsuptikitours#readme"
+}
