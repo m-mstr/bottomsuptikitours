@@ -20,19 +20,17 @@
 </head>
 
 <body>
-    <dialog id="favDialog">
+    <dialog id="emDialog">
         <form>
-            <p>
-                <label for="emailInput">
-                    Email:
-                </label>
-                <input type="email" id="emailInput" />
-            </p>
-            <div>
-                <button value="cancel" formmethod="dialog">Cancel</button>
-                <button id="confirmBtn" value="default">Confirm</button>
+            <label for="email">Please enter your email:</label>
+            <input type:"email" id="email" name="email" pattern=".+@.+\..+">
+    
+            <div class="dlg-btn">
+                <button class="cancelbtn" value="cancel" formmethod="dialog"><i class="bi bi-x-lg"></i></button>
+                <button class="confirmbutton" id="confirmBtn" value="default">Confirm</button>
             </div>
         </form>
+        
     </dialog>
 
     <!-- Pre-Loader -->

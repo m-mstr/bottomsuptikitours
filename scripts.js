@@ -4,32 +4,23 @@ const navClose = document.querySelector(".x");
 const navlinks = document.querySelectorAll(".navlinks li");
 
 // dialog
-const showButton = document.getElementById("showDialog");
-const favDialog = document.getElementById("favDialog");
-const outputBox = document.querySelector("output");
-const emailInput = favDialog.querySelector("#emailInput");
-const confirmBtn = favDialog.querySelector("#confirmBtn");
+const emDialog = document.getElementById('emDialog');
+const emInput = document.querySelector("#email");
+const confirmBtn = emDialog.querySelector("#confirmBtn");
 
-// Show the modal after 5s
 setTimeout(() => {
-    favDialog.showModal()
-}, 500)
+    emDialog.showModal()
+},500);
 
-// "Favorite animal" input sets the value of the submit button
-emailInput.addEventListener("change", (e) => {
-  confirmBtn.value = emailInput.value;
+
+emDialog.addEventListener("close", (e) => {
+   console.log(emDialog.returnValue);
 });
 
-// "Cancel" button closes the dialog without submitting because of [formmethod="dialog"], triggering a close event.
-favDialog.addEventListener("close", (e) => {
-  // send email to mongo
-  console.log(favDialog.returnValue)
-});
 
-// Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.
 confirmBtn.addEventListener("click", (event) => {
-  event.preventDefault(); // We don't want to submit this fake form
-  favDialog.close(emailInput.value); // Have to send the select box value here.
+  event.preventDefault(); 
+  emDialog.close(emInput.value); 
 });
 
 navToggle.addEventListener('click', () => {
