@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/m-mstr/bottomsuptikitours/issues"
   },
-  "homepage": "https://github.com/m-mstr/bottomsuptikitours#readme"
+  "homepage": "https://github.com/m-mstr/bottomsuptikitours#readme",
+  "dependencies": {
+    "mongodb": "^5.7.0"
+  }
 }

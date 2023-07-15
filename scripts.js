@@ -3,6 +3,35 @@ const navToggle = document.querySelector(".burger");
 const navClose = document.querySelector(".x");
 const navlinks = document.querySelectorAll(".navlinks li");
 
+// dialog
+const showButton = document.getElementById("showDialog");
+const favDialog = document.getElementById("favDialog");
+const outputBox = document.querySelector("output");
+const emailInput = favDialog.querySelector("#emailInput");
+const confirmBtn = favDialog.querySelector("#confirmBtn");
+
+// Show the modal after 5s
+setTimeout(() => {
+    favDialog.showModal()
+}, 500)
+
+// "Favorite animal" input sets the value of the submit button
+emailInput.addEventListener("change", (e) => {
+  confirmBtn.value = emailInput.value;
+});
+
+// "Cancel" button closes the dialog without submitting because of [formmethod="dialog"], triggering a close event.
+favDialog.addEventListener("close", (e) => {
+  // send email to mongo
+  console.log(favDialog.returnValue)
+});
+
+// Prevent the "confirm" button from the default behavior of submitting the form, and close the dialog with the `close()` method, which triggers the "close" event.
+confirmBtn.addEventListener("click", (event) => {
+  event.preventDefault(); // We don't want to submit this fake form
+  favDialog.close(emailInput.value); // Have to send the select box value here.
+});
+
 navToggle.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible')
 
@@ -38,7 +67,10 @@ document.addEventListener('scroll', () => {
         } else {
             nav.classList.remove('scrolled');
         }
-    });
+    }
+);
+
+
 
 //  Scroll Effects //
 
