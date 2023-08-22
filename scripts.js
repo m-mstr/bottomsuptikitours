@@ -3,10 +3,15 @@ const navToggle = document.querySelector(".burger");
 const navClose = document.querySelector(".x");
 const navlinks = document.querySelectorAll(".navlinks li");
 
+
+/* modal
+
 // dialog
 const emDialog = document.getElementById('emDialog');
 const emInput = document.querySelector("#email");
 const confirmBtn = emDialog.querySelector("#confirmBtn");
+
+/* modal
 
 setTimeout(() => {
     emDialog.showModal()
@@ -21,7 +26,9 @@ emDialog.addEventListener("close", (e) => {
 confirmBtn.addEventListener("click", (event) => {
   event.preventDefault(); 
   emDialog.close(emInput.value); 
-});
+}); 
+
+*/
 
 navToggle.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible')
