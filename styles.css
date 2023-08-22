@@ -84,6 +84,8 @@ body {
 
 /* ------------ DIALOG POPUP ------------------ */
 
+/*-- 
+
 dialog {
     position: fixed;
     top: 50%;
@@ -140,6 +142,8 @@ form input {
     height: 25px;
     width: 100%;
 }
+
+--!*
 
 
 
@@ -942,7 +946,7 @@ nav.scrolled li a {
         height: 1vw;
     }
 
-    .cruise-col1 {
+    .cruise-col {
         flex-direction: column;
         align-items: center;
         padding: 0;
@@ -985,11 +989,6 @@ nav.scrolled li a {
         text-decoration: underline;
     }
 
-    .cruise-col2 {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
 
     .sunset {
         width: 75vw;
@@ -997,11 +996,6 @@ nav.scrolled li a {
         margin: 25px 0 25px 0;
     }
 
-    .cruise-col3 {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
 
     .drink {
         display: none;
@@ -1017,24 +1011,7 @@ nav.scrolled li a {
    
     /* ------------ SPECIALS ------------ */
 
-    .specials-col1{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .specials-col2{
-        flex-direction: column;
-        align-items: center;
-    }
-    .specials-col3{
-        flex-direction: column;
-        align-items: center;
-    }
-    .specials-col4{
-        flex-direction: column;
-        align-items: center;
-    }
-    .specials-col5{
+    .specials-col{
         flex-direction: column;
         align-items: center;
     }
