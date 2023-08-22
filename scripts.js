@@ -3,6 +3,26 @@ const navToggle = document.querySelector(".burger");
 const navClose = document.querySelector(".x");
 const navlinks = document.querySelectorAll(".navlinks li");
 
+// dialog
+const emDialog = document.getElementById('emDialog');
+const emInput = document.querySelector("#email");
+const confirmBtn = emDialog.querySelector("#confirmBtn");
+
+setTimeout(() => {
+    emDialog.showModal()
+},500);
+
+
+emDialog.addEventListener("close", (e) => {
+   console.log(emDialog.returnValue);
+});
+
+
+confirmBtn.addEventListener("click", (event) => {
+  event.preventDefault(); 
+  emDialog.close(emInput.value); 
+});
+
 navToggle.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible')
 
@@ -38,7 +58,10 @@ document.addEventListener('scroll', () => {
         } else {
             nav.classList.remove('scrolled');
         }
-    });
+    }
+);
+
+
 
 //  Scroll Effects //
 

@@ -1,336 +1,366 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bottoms Up Tiki Tours</title>
-        <meta name="description" content="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bottoms Up Tiki Tours</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="images\Bottoms+Up+Tiki+Tours.png">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!-- POPUP
+
+        <dialog id="emDialog">
+        <form>
+            <label for="email">Please enter your email:</label>
+            <input type:"email" id="email" name="email" pattern=".+@.+\..+">
+    
+            <div class="dlg-btn">
+                <button class="cancelbtn" value="cancel" formmethod="dialog"><i class="bi bi-x-lg"></i></button>
+                <button class="confirmbutton" id="confirmBtn" value="default">Confirm</button>
+            </div>
+        </form>
         
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /><meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Schoolbell&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <link rel="icon" type="image/png" href="images\Bottoms+Up+Tiki+Tours.png">
-        <script src="scripts.js" defer></script>
-    </head>
-    <body>
+    </dialog>
 
-     <!-- Pre-Loader -->
+    -->
 
-        <div aria-controls="navLinks" aria-expanded="false" class="burger">
-            <i class="bi bi-list"></i>
+    <!-- Pre-Loader -->
+
+    <div aria-controls="navLinks" aria-expanded="false" class="burger">
+        <i class="bi bi-list"></i>
+    </div>
+    <div aria-controls="navLinks" aria-expanded="false" class="x">
+        <i class="bi bi-x-lg"></i>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="nav" class="navbar">
+        <div class="brand-title">
+            <h4>Bottoms Up Tiki Tours</h4>
         </div>
-        <div aria-controls="navLinks" aria-expanded="false" class="x">
-            <i class="bi bi-x-lg"></i>
-        </div>
-            
-     <!-- Navbar -->
-        <nav id="nav" class="navbar">
-            <div class="brand-title">
-                <h4>Bottoms Up Tiki Tours</h4>
-            </div>
 
-            <div id="navLinks" data-visible="false" class="navlinks">
-                <ul class="navlist">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li ><a href="#cruises">Cruises</a></li>
-                    <li ><a href="#special-events">Special Events</a></li>
-                    <li > <a href="#contact">Contact</a></li>
-                    <li ><a href="https://www.facebook.com/bottomsuptikitours"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        <div id="navLinks" data-visible="false" class="navlinks">
+            <ul class="navlist">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#cruises">Cruises</a></li>
+                <li><a href="#special-events">Special Events</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <li><a href="https://www.facebook.com/bottomsuptikitours"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="13" height="13" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                         </svg></a></li>
-                </ul>
-            </div>
-        </nav>
+            </ul>
+        </div>
+    </nav>
 
-        <!-- Logo Header --> 
-        <section id="home">
-            <div class="logo header">
-                <div class="logo container">
-                    <img src="images\Bottoms+Up+Tiki+Tours.png" width="200px" height="200px">
-                </div>
+    <!-- Logo Header -->
+    <section id="home">
+        <div class="logo header">
+            <div class="logo container">
+                <img src="images\Bottoms+Up+Tiki+Tours.png" width="200px" height="200px">
             </div>
-        </section>
+        </div>
+    </section>
 
-     <!-- Boat Picture -->
-        <section class="sec1">
-            <div class="boat-image-box">
-                <img class="boat" src="images/boat.jpg">
-            </div>  
-            <div class="sec1-text">
+    <!-- Boat Picture -->
+    <section class="sec1">
+        <div class="boat-image-box">
+            <img class="boat" src="images/boat.jpg">
+        </div>
+        <div class="sec1-text">
+            <div class="text-box">
+                <h1>Bottoms Up Tiki Tours</h1>
+                <p>Bottom's Up is Chincoteague Island's most unique and intimate boat charter. Let your worries melt
+                    away as our tiki captain and crew whisk you away from bustling city life for an unforgettable
+                    adventure. Our 40' tiki charter boat can accommodate up to 40 people. </p>
+            </div>
+
+            <div class="text-box">
+                <h1>Bites and Bottles</h1>
+                <p>You can bring your own drinks and snacks or let us take care of the food details with our catering
+                    options or specialty cruises.</p>
+            </div>
+
+            <div class="text-box">
+                <h1>Safe and Secure</h1>
+                <p>At Bottom's Up, our guests' comfort, safety, and satisfaction are our top priority. All of our
+                    charters include a Coast Guard licensed captain, bottled water, and a bathroom on-board.</p>
+            </div>
+
+            <div class="button">
+                <a id="booking" class="btn"
+                    href="https://fareharbor.com/embeds/book/bottomsuptikitours/?full-items=yes"><button type="button"
+                        class="btn">Book Now!</button></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sec2">
+
+        <div class="boat-image-box2">
+            <img class="boat2mobile" src="images/inside boat.jpg">
+        </div>
+
+        <div class="sec2-text">
+            <div class="text-box">
+                <h1>Tiki Vibes</h1>
+                <p>Our boat features an amazing sound system and our DJ curated playlists will quickly have you jammin'.
+                    You can also hook into our sound system and DJ your own party.</p>
+            </div>
+
+            <div class="text-box">
+                <h1>Time With Your Tribe</h1>
+                <p>Bottom's Up Tiki Tours are the perfect way to celebrate any occasion! Birthdays, proposals, wedding
+                    parties, girls/guys night out, graduation parties, team building, corporate meetings, retirement,
+                    bachelorette/bachelor, anniversary parties, or any reason you can think of.. or for no reason at
+                    all.</p>
+            </div>
+
+            <div class="sec3-text">
+                <h1>How Do You Tiki?</h1>
+                <p>We have a multitude of different cruises and adventures to match your vibe. All cruises can be booked
+                    as a private charter if you prefer. Give us a call to create your personal specialty cruise.</p>
+            </div>
+        </div>
+
+        <div class="boat-image-box2">
+            <img class="boat2" src="images/inside boat.jpg">
+        </div>
+    </section>
+
+    <!-- CRUISES -->
+
+    <section id="cruises" class="cruises">
+
+        <div class="section-title">
+            <div class="underline"></div>
+            <h1>Cruises</h1>
+            <div class="underline"></div>
+        </div>
+
+        <div class="cruise-col">
+
+            <div class="cruise1-img-box">
+                <img class="family-pic-mobile" src="images/family pic.jpg">
+            </div>
+
+            <div class="cruise-col-left">
                 <div class="text-box">
-                    <h1>Bottoms Up Tiki Tours</h1>
-                    <p>Bottom's Up is Chincoteague Island's most unique and intimate boat charter. Let your worries melt away as our tiki captain and crew whisk you away from bustling city life for an unforgettable adventure. Our 40' tiki charter boat can accommodate up to 40 people. </p>
+                    <h1>NO SHOES, NO SHIRT, NO PROBLEM!</h1>
+                    <h2>11:00AM-1:00PM Lunch Channel Cruise</h2>
+                    <p>You can do lots of things on this mid day cruise.... soak up the sun while checking out the
+                        Island sights or have a catered lunch on board.</p>
                 </div>
 
                 <div class="text-box">
-                    <h1>Bites and Bottles</h1>
-                    <p>You can bring your own drinks and snacks or let us take care of the food details with our catering options or specialty cruises.</p>
+                    <h1>THE LICENSE TO CHILL CRUISE</h1>
+                    <h2>2:00-4:00PM Sit Back and Relax</h2>
+                    <p>This tour gives you a "License to Chill" Spend your day exploring the waterways around
+                        Chincoteague's campgrounds. We can stop at a waterfront bar or search for dolphins. Casual
+                        cruising with no strings attached.</p>
                 </div>
 
                 <div class="text-box">
-                    <h1>Safe and Secure</h1>
-                    <p>At Bottom's Up, our guests' comfort, safety, and satisfaction are our top priority. All of our charters include a Coast Guard licensed captain, bottled water, and a  bathroom on-board.</p>
+                    <h1>THE 5:00 SOMEWHERE TOUR</h1>
+                    <h2>4:00-6:00PM Local Hotspot Stops</h2>
+                    <p>It may be close to happy hour, but there's no judgement here because there is always a five
+                        o'clock cruise somewhere. Escape to the islands on this two hour tour. Add on our snack or
+                        dinner catering options for a truly memorable day.</p>
                 </div>
 
-                <div class="button">
-                    <a id="booking" class="btn" href="https://fareharbor.com/embeds/book/bottomsuptikitours/?full-items=yes"><button type="button" class="btn">Book Now!</button></a>
-                </div>
             </div>
 
-        </section>
-
-        <section class="sec2">
-
-            <div class="boat-image-box2">
-                <img class="boat2mobile" src="images/inside boat.jpg">
+            <div class="cruise1-img-box">
+                <img class="family-pic" src="images/family pic.jpg">
             </div>
-            
-            <div class="sec2-text">
+
+        </div>
+
+        <div class="cruise-col">
+
+            <div class="cruise4-img-box">
+                <img class="sunset" src="images/sunset.jpg">
+            </div>
+
+            <div class="cruise-col-right">
                 <div class="text-box">
-                    <h1>Tiki Vibes</h1>
-                    <p>Our boat features an amazing sound system and our DJ curated playlists will quickly have you jammin'. You can also hook into our sound system and DJ your own party.</p>
+                    <h1>WHEN THE SUN GOES DOWN TOUR</h1>
+                    <h2>6:00-9:00PM 3 Hour Sunset Cruise</h2>
+                    <p>Relax while we drift into the sunset with a drink in our hand and some great island vibes playing
+                        in the background. Add on a dinner package or some delicious snacks. Maybe we will see the
+                        elusive Green Flash!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cruise-col">
+
+            <div class="cruise5-img-box">
+                <img class="drink-mobile" src="images/bloody-mary-mimosa.jpg">
+            </div>
+
+            <div class="cruise-col-left">
+                <div class="text-box">
+                    <h1>BOTTOM'S UP BRUNCH ON THE BAY TOUR</h1>
+                    <h2>10:00AM-1:00PM Morning Cruise</h2>
+                    <h3>Saturday & Sunday Only</h3>
+                    <p>Irish coffee preferred... or Mimosas... or Bloody Mary's.. the choices are endless. Hey Early
+                        birds...Let's cruise on the peaceful morning waters around Chincoteague Island. Catered Brunch
+                        Buffet included. Time to unwind and relax in the morning sun.</p>
                 </div>
 
                 <div class="text-box">
-                    <h1>Time With Your Tribe</h1>
-                    <p>Bottom's Up Tiki Tours are the perfect way to celebrate any occasion! Birthdays, proposals, wedding parties, girls/guys night out, graduation parties, team building, corporate meetings, retirement, bachelorette/bachelor, anniversary parties, or any reason you can think of.. or for no reason at all.</p>
-                </div>
-
-                <div class="sec3-text">
-                    <h1>How Do You Tiki?</h1>
-                    <p>We have a multitude of different cruises and adventures to match your vibe. All cruises can be booked as a private charter if you prefer. Give us a call to create your personal specialty cruise.</p>
+                    <h1>THE SUMMER NIGHTS TOUR</h1>
+                    <h2><em>Specialty Cruise - Call to Book!</em></h2>
+                    <p>What is way better than bar hopping??? Jumping on our floating tiki! This cruise is the perfect
+                        remedy for the late night party people... Cruise the waterways under the stars, crank up the
+                        tunes and have a starlit dance party. Disco ball included!</p>
                 </div>
             </div>
 
-            <div class="boat-image-box2">
-                <img class="boat2" src="images/inside boat.jpg">
-            </div>
-        </section>
-
-        <!-- CRUISES -->
-
-        <section id="cruises" class="cruises">
-
-            <div class="section-title">
-                <div class="underline"></div>
-                <h1>Cruises</h1>
-                <div class="underline"></div>
+            <div class="cruise5-img-box">
+                <img class="drink" src="images/bloody-mary-mimosa.jpg">
             </div>
 
-            <div class="cruise-col1">
+        </div>
+    </section>
 
-                <div class="cruise1-img-box">
-                    <img class="family-pic-mobile" src="images/family pic.jpg">
-                </div>
+    <!-- SPECIALS -->
 
-                <div class="cruise-col-left">
-                    <div class="text-box">
-                        <h1>NO SHOES, NO SHIRT, NO PROBLEM!</h1>
-                        <h2>11:00AM-1:00PM Lunch Channel Cruise</h2>
-                        <p>You can do lots of things on this mid day cruise.... soak up the sun while checking out the Island sights or have a catered lunch on board.</p>
-                    </div>
+    <section id="special-events" class="special-events">
 
-                    <div class="text-box">
-                        <h1>THE LICENSE TO CHILL CRUISE</h1>
-                        <h2>2:00-4:00PM Sit Back and Relax</h2>
-                        <p>This tour gives you a "License to Chill" Spend your day exploring the waterways around Chincoteague's campgrounds. We can stop at a waterfront bar or search for dolphins. Casual cruising with no strings attached.</p>
-                    </div>
+        <div class="section-title">
+            <div class="underline"></div>
+            <h1>Special Events</h1>
+            <div class="underline"></div>
+        </div>
 
-                    <div class="text-box">
-                        <h1>THE 5:00 SOMEWHERE TOUR</h1>
-                        <h2>4:00-6:00PM Local Hotspot Stops</h2>
-                        <p>It may be close to happy hour, but there's no judgement here because there is always a five o'clock cruise somewhere. Escape to the islands on this two hour tour. Add on our snack or dinner catering options for a truly memorable day.</p>
-                    </div>
+        <div class="specials-col">
 
-                </div>
-
-                <div class="cruise1-img-box">
-                    <img class="family-pic" src="images/family pic.jpg">
-                </div>
-
+            <div class="specials1-img-box">
+                <img class="moons" src="images/moons.jpg">
             </div>
 
-            <div class="cruise-col2">
-
-                <div class="cruise4-img-box">
-                    <img class="sunset" src="images/sunset.jpg">
+            <div class="specials-col-right">
+                <div class="text-box">
+                    <h1>FULL MOON TIKI CRUISE</h1>
+                    <h2>8:00-11:00PM Only On Full Moons</h2>
+                    <p>Watch the full moon rise from the best seat in the house on this smooth ride around the island.
+                        If you've never been on the waters at night to see the beautiful stars and moon, you are in for
+                        a magical treat!
+                    </p>
                 </div>
+            </div>
+        </div>
 
-                <div class="cruise-col-right">
-                    <div class="text-box">
-                        <h1>WHEN THE SUN GOES DOWN TOUR</h1>
-                        <h2>6:00-9:00PM 3 Hour Sunset Cruise</h2>
-                        <p>Relax while we drift into the sunset with a drink in our hand and some great island vibes playing in the background. Add on a dinner package or some delicious snacks. Maybe we will see the elusive Green Flash!</p>
-                    </div>
+        <div class="specials-col">
+
+            <div class="specials2-img-box">
+                <img class="crabs-mobile" src="images/crabs.jpg">
+            </div>
+
+            <div class="specials-col-left">
+                <div class="text-box">
+                    <h1>CRABFEAST & FLOAT (Specialty Event)</h1>
+                    <h2>Saturday September 30th 2023 @ 1pm</h2>
+                    <p>Come join us for an endless supply of steamed crabs, delicious food, creative cocktails, festive music, a party cruise around Chincoteague Bay and much more!
+                        <br><b><em>-Details on our booking page-</em></b>
+                    </p>
                 </div>
             </div>
 
-            <div class="cruise-col3">
-
-                <div class="cruise5-img-box">
-                    <img class="drink-mobile" src="images/bloody-mary-mimosa.jpg">
-                </div>
-
-                <div class="cruise-col-left">
-                    <div class="text-box">
-                            <h1>BOTTOM'S UP BRUNCH ON THE BAY TOUR</h1>
-                            <h2>10:00AM-1:00PM Morning Cruise</h2>
-                            <h3>Saturday & Sunday Only</h3>
-                            <p>Irish coffee preferred... or Mimosas... or Bloody Mary's.. the choices are endless. Hey Early birds...Let's cruise on the peaceful morning waters around Chincoteague Island. Catered Brunch Buffet included. Time to unwind and relax in the morning sun.</p>
-                    </div>
-
-                    <div class="text-box">
-                            <h1>THE SUMMER NIGHTS TOUR</h1>
-                            <h2><em>Specialty Cruise - Call to Book!</em></h2>
-                            <p>What is way better than bar hopping??? Jumping on our floating tiki! This cruise is the perfect remedy for the late night party people... Cruise the waterways under the stars, crank up the tunes and have a starlit dance party. Disco ball included!</p>
-                    </div>
-                </div>
-
-                <div class="cruise5-img-box">
-                    <img class="drink" src="images/bloody-mary-mimosa.jpg">
-                </div>
-
-            </div>
-        </section>
-
-       <!-- SPECIALS -->
-
-        <section id="special-events" class="special-events">
-
-            <div class="section-title">
-                <div class="underline"></div>
-                <h1>Special Events</h1>
-                <div class="underline"></div>
+            <div class="specials2-img-box">
+                <img class="crabs" src="images/crabs.jpg">
             </div>
 
-            <div class="specials-col1">
+        </div>
 
-                <div class="specials1-img-box">
-                    <img class="moons" src="images/moons.jpg">
+        <div class="button-2">
+            <a id="booking" class="btn-2"
+                href="https://fareharbor.com/embeds/book/bottomsuptikitours/?full-items=yes"><button type="button"
+                    class="btn">Book Now!</button></a>
+        </div>
+
+    </section>
+
+    <!-- CONTACT & MAP -->
+
+    <section id="contact" class="contact-box">
+
+        <div class="section-title">
+            <div class="underline"></div>
+            <h1>Contact & Location</h1>
+            <div class="underline"></div>
+        </div>
+
+        <div class="contact-col">
+
+            <div class="contact-text">
+
+                <div class="info">
+                    <p>Bottoms Up Tiki Tours<br>
+                    <address>2246 Curtis Merritt Harbor Dr,<br>
+                        Chincoteague, VA 23336</address>
                 </div>
 
-                <div class="specials-col-right">
-                    <div class="text-box">
-                        <h1>FULL MOON TIKI CRUISE</h1>
-                        <h2>8:00-11:00PM Only On Full Moons</h2>
-                        <p>Watch the full moon rise from the best seat in the house on this smooth ride around the island. If you've never been on the waters at night to see the beautiful stars and moon, you are in for a magical treat!
-                        </p>
-                    </div>
+                <h1>Contact Us</h1>
+
+                <div class="links">
+                    <a href="tel:4438801731"><i class="bi bi-telephone"></i> (443)880-1731</a>
+                </div>
+
+                <div class="links">
+                    <a href="mailto:info@bottomsuptikitours.com"><i class="bi bi-envelope"></i>
+                        info@bottomsuptikitours.com</a>
+                </div>
+
+                <div class="links">
+                    <a href=https://www.facebook.com/bottomsuptikitours><i class="bi bi-facebook"></i> Bottoms Up Tiki
+                        Tours</a>
                 </div>
             </div>
 
-            <div class="specials-col2">
-
-                <div class="specials2-img-box">
-                    <img class="fireworks-mobile" src="images/fireworks.jpg">
-                </div>
-
-                <div class="specials-col-left">
-                    <div class="text-box">
-                        <h1>FORTH OF JULY FIREWORKS CRUISE</h1>
-                        <p>One night only - July 4th - The best way to see the Chincoteague Island Fireworks on July 4th is from a tiki boat. Float in the waterways while sipping a cocktail and listening to our fourth of July playlist. America at is best! No traffic, no crowds!</p>
-                    </div>
-                </div>
-
-                <div class="specials2-img-box">
-                    <img class="fireworks" src="images/fireworks.jpg">
-                </div>
+            <div class="container-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.1512575085744!2d-75.40761448467867!3d37.903527079736115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b96626d2509295%3A0x7d3285cca1324d00!2s2246%20Curtis%20Merritt%20Harbor%20Dr%2C%20Chincoteague%2C%20VA%2023336!5e0!3m2!1sen!2sus!4v1678491543967!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
+    </section>
 
-            <div class="specials-col3">
+    <section class="cancel-box">
+        <div class="cancel">
+            <h2>Cancellation Policy</h2>
+            <p><em>Customers must cancel within <b>7 days</b> of the scheduled tour. Anyday after the 7 day time period
+                    has passed, you will recieve a voucher for a future tour. Customers will also recieve a full refund
+                    for any operator cancellations due to inclimate weather conditions or any other unforeseem
+                    circumstances. <b>No-shows will be charged full price.</b> To cancel, contact us by phone to inquire
+                    about a cancellation.</em>
+            <p>
+        </div>
+    </section>
 
-                <div class="specials3-img-box">
-                    <img class="ponys" src="images/ponys.jpg">
-                </div>
+    <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->
+    <script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
 
-                <div class="specials-col-right">
-                    <div class="text-box">
-                        <h1>ANNUAL PONY SWIM VIP EXPERIENCE</h1>
-                        <h2>July 26th (Times TBD)</h2>
-                        <p>Get VIP seats to one of the most unique attractions on the Eastern Shore. Call early to reserve your seats as we fill up quickly! This is a once in a lifetime experience. Get up close and personal as the ponies make their annual water crossing!
-                        </p>
-                    </div>
-                </div>
-            </div>
+</body>
+<div class="gradient"></div>
 
-            <div class="specials-col4">
-
-                <div class="specials4-img-box">
-                    <img class="carnival-mobile" src="images/carnival.jpg">
-                </div>
-
-                <div class="specials-col-left">
-                    <div class="text-box">
-                        <h1>CHINCOTEAGUE CARNIVAL FIREWORKS CRUISE</h1>
-                        <p>July 29th - The best way to see the Chincoteague Carnival Fireworks on July 29th is from a tiki boat. Float in the best possible location while sipping a cocktail and watching the finale to the Chincoteague Volunteer Fireman's month long Carnival. America at is best! No traffic, no crowds!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="specials4-img-box">
-                    <img class="carnival" src="images/carnival.jpg">
-                </div>
-            </div>
-
-            <div class="button-2">
-                <a id="booking" class="btn-2" href="https://fareharbor.com/embeds/book/bottomsuptikitours/?full-items=yes"><button type="button" class="btn">Book Now!</button></a>
-            </div>
-
-        </section>
-
-        <!-- CONTACT & MAP -->
-
-        <section id="contact" class="contact-box">
-
-            <div class="section-title">
-                <div class="underline"></div>
-                <h1>Contact & Location</h1>
-                <div class="underline"></div>
-            </div>
-
-            <div class="contact-col">
-
-                <div class="contact-text">
-
-                    <div class="info">
-                        <p>Bottoms Up Tiki Tours<br><address>2246 Curtis Merritt Harbor Dr,<br> 
-                            Chincoteague, VA 23336</address>
-                    </div>
-
-                    <h1>Contact Us</h1>
-
-                    <div class="links">
-                        <a href="tel:4438801731"><i class="bi bi-telephone"></i> (443)880-1731</a>
-                    </div>
-
-                    <div class="links">
-                        <a href="mailto:info@bottomsuptikitours.com"><i class="bi bi-envelope"></i> info@bottomsuptikitours.com</a>
-                    </div>
-
-                    <div class="links">
-                        <a href=https://www.facebook.com/bottomsuptikitours><i class="bi bi-facebook"></i> Bottoms Up Tiki Tours</a>
-                    </div>
-                </div>
-                    
-                <div class="container-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.1512575085744!2d-75.40761448467867!3d37.903527079736115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b96626d2509295%3A0x7d3285cca1324d00!2s2246%20Curtis%20Merritt%20Harbor%20Dr%2C%20Chincoteague%2C%20VA%2023336!5e0!3m2!1sen!2sus!4v1678491543967!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <section class="cancel-box">
-            <div class="cancel">
-                <h2>Cancellation Policy</h2>
-                <p><em>Customers must cancel within <b>7 days</b> of the scheduled tour. Anyday after the 7 day time period has passed, you will recieve a voucher for a future tour. Customers will also recieve a voucher (raincheck) for any operator cancellations due to inclimate weather conditions or any other unforeseen circumstances. <b>No-shows will be charged full price.</b> To cancel, contact us by phone to inquire about a cancellation.</em><p>
-            </div>
-        </section>
-
-        <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->
-        <script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
-
-    </body>
-    <div class="gradient"></div>
 </html>
