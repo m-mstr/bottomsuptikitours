@@ -11,8 +11,6 @@ const emDialog = document.getElementById('emDialog');
 const emInput = document.querySelector("#email");
 const confirmBtn = emDialog.querySelector("#confirmBtn");
 
-/* modal
-
 setTimeout(() => {
     emDialog.showModal()
 },500);
