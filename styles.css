@@ -189,7 +189,7 @@ nav.scrolled  {
 .brand-title h4 {
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 1.5vw;
+    font-size: 1.7rem;
     font-family: 'Schoolbell', cursive;
     align-items: center;
     line-height: 30px;
@@ -226,7 +226,7 @@ nav.scrolled ul li:after {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: .8vw;
+    font-size: 1rem;
     transition: color 0.5s ease-in-out;
 }
 
@@ -279,11 +279,11 @@ nav.scrolled li a {
 }
 
 .sec1-text h1 {
-    font-size: 1.8vw;
+    font-size: 2.5rem;
 }
 
 .sec1-text p {
-    font-size: .8vw;
+    font-size: 1rem;
 }
 
 /* ------------ SECTION 2 ------------ */
@@ -318,19 +318,19 @@ nav.scrolled li a {
 }
 
 .sec2-text h1 {
-    font-size: 1.8vw;
+    font-size: 2.5rem;
     font-family: 'Schoolbell', cursive;
     text-transform: uppercase;
 }
 
 .sec2-text p {
-    font-size: .8vw;
+    font-size: 1rem;
 }
 
 /* ------------ CRUISES ------------ */
 
 .section-title {
-    font-size: 2.8vw;
+    font-size: 3.5rem;
     font-family: 'Schoolbell', cursive;
     display: flex;
     justify-content: center;
@@ -365,20 +365,12 @@ nav.scrolled li a {
 }
 
 .cruise-col-left h1 {
-    font-size: 1.8vw;
+    font-size: 2.5rem;
     font-family: 'Schoolbell', cursive;
 }
 
-.cruise-col-left h2 {
-    font-size: 1vw;
-}
-
-.cruise-col-left h3 {
-    font-size: .8vw;
-}
-
 .cruise-col-left p {
-    font-size: .8vw;
+    font-size: 1rem;
 }
 
 .cruise-col-right {
@@ -390,16 +382,12 @@ nav.scrolled li a {
 }
 
 .cruise-col-right h1 {
-    font-size: 1.8vw;
+    font-size: 2.5rem;
     font-family: 'Schoolbell', cursive;
 }
 
-.cruise-col-right h2 {
-    font-size: 1vw;
-}
-
 .cruise-col-right p {
-    font-size: .8vw;
+    font-size: 1rem;
 }
 
 .family-pic {
@@ -444,103 +432,53 @@ nav.scrolled li a {
 
 /* ------------ SPECIAL EVENTS ------------ */
 
-.moons {
-    width: 31vw;
-    height: auto !important;
-    display: flex;
-    border-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
-
-.fireworks {
-    width: 31vw;
-    height: auto !important;
-    display: flex;
-    border-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
-
-.fireworks-mobile{
-    display: none;
-    border-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
-
-.ponys {
-    width: 31vw;
-    height: auto !important;
-    display: flex;
-    border-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
-
-.carnival {
-    width: 31vw;
-    height: auto !important;
-    display: flex;
-    border-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
-
-.carnival-mobile {
-    display: none;
-    border-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
-
-.crabs {
-    width: 31vw;
-    height: auto !important;
-    display: flex;
-    border-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
-
-.crabs-mobile {
-    display: none;
-    border-radius: 25px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
-
 .specials-col {
     display: flex;
     padding: 15px 0 15px 0;
-}
-
-.specials-col-left {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+}
+
+.specials-list {
+    position: relative;
+    width: 30%;
+}
+
+.specials-list ul {
+    position: relative;
+}
+
+.specials-list ul li {
+    position: relative;
+    display: block;
+    color: #000000;
+    list-style: none;
+    margin: 25px 0;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'Schoolbell', curisve;
+    font-size: 2rem;
+    font-weight: 500;
     text-align: center;
-    padding-right: 15px;
+    transition: 0.5s;
 }
 
-.specials-col-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding-left: 15px;
+.specials-list ul li:hover {
+    color: white;
 }
 
-.specials-col-right h1 {
-    font-size: 1.8vw;
-    font-family: 'Schoolbell', cursive;
+.specials-list ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #00ffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
 
-.specials-col-right p {
-    font-size: .8vw;
+.specials-list ul li:hover::after {
+    width: 100%;
 }
-
-.specials-col-left h1 {
-    font-size: 1.8vw;
-    font-family: 'Schoolbell', cursive;
-}
-
-.specials-col-left p {
-    font-size: .8vw;
-}
-
 
 
 /* ------------ BOOKING ------------ */
@@ -554,7 +492,7 @@ nav.scrolled li a {
 .button-2 {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .btn {
@@ -562,13 +500,13 @@ nav.scrolled li a {
     background-size: 200% auto;
     background: linear-gradient( to right, #f6bc00 51%, #ff8800 100%);
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: aliceblue;
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
-    height: 6vh;
-    width: 12vw;
+    height: 5rem;
+    width: 22rem;
     cursor: pointer;
     z-index: 10;
     transition: 0.5s;
@@ -612,7 +550,7 @@ nav.scrolled li a {
 }
 
 .links a {
-    font-size: 20px;
+    font-size: 1.2rem;
     text-decoration: none;
     padding-left: 5px;
     color: black;
@@ -644,7 +582,7 @@ nav.scrolled li a {
 }
 
 .info {
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -670,12 +608,16 @@ nav.scrolled li a {
 }
 
 .cancel h2 {
-    font-size: 25px;
+    font-size: 1.5rem;
+}
+
+.cancel p {
+    font-size: 1rem;
 }
 
 
 /* TABLET */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1245px) {
     body {
         margin: 0;
         padding: 0 5% 0 5%;
@@ -715,12 +657,11 @@ nav.scrolled li a {
 }
 
 
-
-/* ------------ MOBILE PHONE ------------ */
-
+/* ------------ MOBILE PHONE & SMALL TABLET ------------ */
 
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 960px) {
 
     html {
         overflow-x: hidden !important;
@@ -731,12 +672,15 @@ nav.scrolled li a {
     }
 
     .logo.header img {
-        width: 45vw;
+        width: 30vw;
         height: auto;
+        padding-top: 25px;
     }
 
     .brand-title h4{
+        position: relative;
         font-size: 4vw;
+        padding: 5px;
     }
 
 
@@ -882,21 +826,17 @@ nav.scrolled li a {
     }
 
     .sec1-text {
+        display: flex;
         padding: 0;
-    }
-
-    .sec1-text h1 {
-        font-size: 5vw;
-    }
-
-    .sec1-text p {
-        font-size: 4vw;
+        margin: 0;
+        width: 100%;
     }
 
     .btn {
-        width: 50vw;
-        height: 8vh;
-        font-size: 5vw;
+        position: relative;
+        width: 65vw;
+        height: 15vw;
+        font-size: 3vw;
     }
     
 
@@ -925,20 +865,13 @@ nav.scrolled li a {
 
     .sec2-text {
         padding: 0;
-    }
-
-    .sec2-text h1 {
-        font-size: 5vw;
-    }
-
-    .sec2-text p {
-        font-size: 4vw;
+        width: 100%;
     }
 
     /* ------------ CRUISES ------------ */
 
     .section-title {
-        font-size: 5vw;
+        font-size: 6vw;
         padding: 30px 0 30px 0;
     }
 
@@ -972,30 +905,18 @@ nav.scrolled li a {
     }
 
     .text-box h1 {
-        font-size: 5vw;
-    }
-
-    .text-box p {
         font-size: 4vw;
     }
 
-    .text-box h2 {
-        font-size: 3vw;
-        font-style: italic;
+    .text-box p {
+        font-size: 2.5vw;
     }
-
-    .text-box h3 {
-        font-size: 2.8vw;
-        text-decoration: underline;
-    }
-
 
     .sunset {
         width: 75vw;
         height: auto;
         margin: 25px 0 25px 0;
     }
-
 
     .drink {
         display: none;
@@ -1016,80 +937,106 @@ nav.scrolled li a {
         align-items: center;
     }
 
-    .specials-col-left {
-        padding: 0;
+    .specials-list {
+        width: 50%;
     }
 
-    .specials-col-right {
-        padding: 0;
-    }
-
-    .moons {
-        width: 75vw;
-        height: auto;
-        margin-bottom: 25px;
-    }
-
-    .fireworks {
-        display: none;
-    }
-
-    .fireworks-mobile {
-        display: flex;
-        width: 75vw;
-        height: auto;
-        margin-bottom: 25px;
-    }
-
-    .ponys {
-        width: 75vw;
-        height: auto;
-        margin-bottom: 25px;
-    }
-
-    .carnival {
-        display: none;
-    }
-
-    .carnival-mobile {
-        display: flex;
-        width: 75vw;
-        height: auto;
-        margin-bottom: 25px;
-    }
-
-    .crabs {
-        display: none;
-    }
-
-    .crabs-mobile {
-        display: flex;
-        width: 75vw;
-        height: auto;
-        margin-bottom: 25px;
+    .specials-list ul li {
+        font-size: 5vw;
     }
 
     /* ------------ CONTACT & MAP ------------ */
 
+    .contact-col {
+        flex-direction: column;
+    }
+
     .container-map iframe {
-        width: 40vw;
-        height: 25vh;
+        width: 70vw;
+        height: 15vh;
         border-radius: 25px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
     }
 
+    .contact-text {
+        padding-bottom: 25px;
+    }
+
+    .contact-text h1 {
+        font-size: 4vw;
+    }
+
     .info {
-        font-size: 2.5vw;
+        font-size: 3vw;
+    }
+
+    .links a {
+        font-size: 3vw;
     }
 
     /* ------------ CANCEL ------------ */
 
     .cancel h2 {
-        font-size: 2vh;
+        font-size: 5vw;
+        padding-bottom: 10px;
     }
 
     .cancel p {
-        font-size: 1.5vh;
+        font-size: 2.5vw;
     }
 
+}
+
+@media screen and (max-width: 415px) {
+
+    .logo.header img {
+        width: 40vw;
+    }
+
+    .brand-title h4{
+        font-size: 5vw;
+    }
+
+    .btn {
+        width: 80vw;
+        height: 15vw;
+        font-size: 4vw;
+    }
+
+    .section-title {
+        font-size: 8vw;
+    }
+
+    .text-box h1 {
+        font-size: 5vw;
+    }
+
+    .text-box p {
+        font-size: 3.5vw;
+    }
+
+    .specials-list {
+        width: 70%;
+    }
+
+    .specials-list ul li {
+        font-size: 6vw;
+    }
+
+    .container-map iframe {
+        width: 80vw;
+        height: 20vh;
+    }
+
+    .contact-text h1 {
+        font-size: 5.5vw;
+    }
+
+    .info {
+        font-size: 4.5vw;
+    }
+
+    .links a {
+        font-size: 4.5vw;
+    }
 }
