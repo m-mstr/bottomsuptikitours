@@ -21,22 +21,58 @@
 
 <body>
 
-    <!-- POPUP
+    <!-- POPUP -->
 
-        <dialog id="emDialog">
-        <form>
-            <label for="email">Please enter your email:</label>
-            <input type:"email" id="email" name="email" pattern=".+@.+\..+">
+    <dialog id="emDialog">
+        <form method="dialog">
+            <!-- <label for="email">Please enter your email:</label>
+            <input type:"email" id="email" name="email" pattern=".+@.+\..+"> -->
     
+            <div class="holiday">
+                <h1>Holiday DisCountDown</h1>
+                <p>50% off any private cruise or $10 off any regular or specialty cruise tickets!</p>
+
+                <div class="dealend">
+                    <h2>This deal is good for the next</h2>
+                    <div class="countdown">
+                        <div class="numbers">
+                            <p id="days">00</p>
+                            <span>Days</span>
+                        </div>
+                        <div class="numbers">
+                            <p id="hours">00</p>
+                            <span>Hours</span>
+                        </div>
+                        <div class="numbers">
+                            <p id="minutes">00</p>
+                            <span>Minutes</span>
+                        </div>
+                        <div class="numbers">
+                            <p id="seconds">00</p>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+                    <img src="images\lights.png" width="417px" height="100px">
+                </div>
+
+                <div class="book">
+                    <p>Use promo code "CHRISTMAS"</p>
+                    <div class="button-modal">
+                        <a id="bookingBtn" class="mbtn"
+                            href="https://book.peek.com/s/623da958-05ee-4a54-a681-6e37384c9a24/4dEdl "><button
+                            class="mbtn">Book Now!</button></a>
+                    </div>
+                </div>
+            </div>
+            
             <div class="dlg-btn">
-                <button class="cancelbtn" value="cancel" formmethod="dialog"><i class="bi bi-x-lg"></i></button>
-                <button class="confirmbutton" id="confirmBtn" value="default">Confirm</button>
+                <button class="cancelBtn" value="cancel" formmethod="dialog"><i class="bi bi-x-lg"></i></button>
             </div>
         </form>
         
     </dialog>
 
-    -->
+   
 
     <!-- Pre-Loader -->
 
@@ -72,8 +108,13 @@
     <section id="home">
         <div class="logo header">
             <div class="logo container">
-                <img src="images\Bottoms+Up+Tiki+Tours.png" width="200px" height="200px">
+                <!-- <img src="images\Bottoms+Up+Tiki+Tours.png" width="200px" height="200px"> -->
+                <img src="images\christmas logo.png" width="250px" height="250px">
             </div>
+        </div>
+
+        <div class="boat-header">
+            <img src="images/christmas boat.png" width="820px" width="360px">
         </div>
     </section>
 

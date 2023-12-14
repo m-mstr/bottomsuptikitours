@@ -36,7 +36,7 @@ html:focus-within {
 }
 
 body {
-    background-color: #8ACDEA;
+    background: #8ACDEA;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 15%;
@@ -44,7 +44,8 @@ body {
     box-shadow: 0px -2px 8px rgb(0 0 0 / 0.4);
     overflow-x: hidden !important;
     z-index: -1;
-}
+    color: black;
+    }
 
 .gradient {
     width: 100vw;
@@ -84,34 +85,34 @@ body {
 
 /* ------------ DIALOG POPUP ------------------ */
 
-/*-- 
-
 dialog {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     z-index: 1001;
     transition: 0.5s;
     border-radius: 25px;
     border: none;
     margin: 0;
     background-size: 200% auto;
-    background: linear-gradient( to right, #f6bc00 51%, #ff8800 100%);
+    background: linear-gradient( to top, #990913 -20%, #014f41 100%);
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 25px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    color: white;
 }
 
-.cancelbtn {
+.cancelBtn {
     border: none;
     background: none;
 }
 
-.confirmbutton {
+/* .confirmbutton {
+    display: none;
     border: none;
     border-radius: 10px;
     background: white;
@@ -119,7 +120,7 @@ dialog {
     width: 100px;
     height: 25px;
     font-size: 15px;
-}
+} */
 
 .dlg-btn i {
     display: flex;
@@ -130,7 +131,108 @@ dialog {
     color: white !important;
 }
 
-dialog form {
+.holiday {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0;
+}
+
+.holiday h1 {
+    text-align: center;
+    text-transform: none;
+    padding: 25px 0 15px 0;
+}
+
+.holiday p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 25px 0;
+}
+
+.dealend {
+    text-align: center;
+    padding: 0;
+}
+
+.dealend h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+}
+
+.dealend p {
+    padding: 0;
+}
+
+.countdown {
+    display: flex;
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+
+.countdown div {
+    flex-basis: 200px;
+}
+
+.countdown div p {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 0px;
+    border-radius: 25px;
+    color: #990913;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 10px;
+}
+
+.numbers span {
+    color: #014f41;
+}
+
+.dealend img {
+    width: 97%;
+    height: auto;
+    margin-top: -21px;
+}
+
+.book p {
+    padding: 30px 0 20px 0;
+}
+
+.button-modal {
+    display: flex;
+    justify-content: center;
+}
+
+.mbtn {
+    margin: 0;
+    background-size: 200% auto;
+    background: #014f41;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    height: 5rem;
+    width: 22rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.5s;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+}
+
+.mbtn:hover {
+    background-position: left center;
+    color: rgb(0 0 0 / 0.8);
+}
+
+/* dialog form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,13 +243,15 @@ dialog form {
 form input {
     height: 25px;
     width: 100%;
-}
-
---!*
-
-
+} */
 
 /* ------------ LOGO HEADER ------------ */
+
+#home {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+}
 
 
 .logo.header {
@@ -159,8 +263,22 @@ form input {
 }
 
 .logo.header img {
-    width: 15vw;
+    /* width: 15vw; */
+    width: 20vw;
     height: auto;
+}
+
+.boat-header {
+    display: flex;
+    align-items: center;
+    padding: 50px 0 20px 0;
+}
+
+.boat-header img {
+    width: 30vw;
+    height: 14vw;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 
 /* ------------ NAVBAR ------------ */
@@ -654,6 +772,14 @@ nav.scrolled li a {
     .info {
         font-size: 2vw;
     }
+
+    .holiday {
+        padding: 15px 0 0 0;
+    }
+
+    .countdown {
+        padding: 20px 0 0 0;
+    }
 }
 
 
@@ -671,10 +797,71 @@ nav.scrolled li a {
         justify-content: space-evenly;
     }
 
+    #home {
+        justify-content: center;
+    }
+
     .logo.header img {
         width: 30vw;
         height: auto;
         padding-top: 25px;
+    }
+
+    .boat-header img {
+        width: 40vw;
+        height: auto;
+    }
+
+    dialog {
+        width: 600px;
+        height: 600px;
+    }
+
+    .holiday h1 {
+        font-size: 2.5rem;
+        padding: 5px 0 10px 0;
+    }
+
+    .holiday p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .dealend h2 {
+        font-size: 1.5rem;
+        padding: 15px 10px 0 10px;
+    }
+
+    .countdown {
+        justify-content: center;
+        margin: 0 5px;
+    }
+
+    .countdown div p {
+        font-size: 3rem;
+        border-radius: 10px;
+    }
+
+    .countdown div {
+        flex-basis: 150px;
+    }
+
+    .numbers {
+        margin: 0 5px;
+    }
+
+    .numbers span {
+        font-size: .8rem;
+    }
+
+    .dealend img {
+        width: 94%;
+        margin-top: -12px;
+    }
+
+    .book p {
+        font-size: 1.2rem;
+        padding: 15px 0;
     }
 
     .brand-title h4{
@@ -991,6 +1178,23 @@ nav.scrolled li a {
 
     .logo.header img {
         width: 40vw;
+    }
+
+    .numbers {
+        margin: 0 1px;
+        border-radius: 10px;
+    }
+
+    .dealend img {
+        margin-top: -10px;
+    }
+
+    .book p {
+        padding: 10px 0 0 0;
+    }
+
+    .mbtn {
+        width: 15rem;
     }
 
     .brand-title h4{
