@@ -7,19 +7,18 @@ const navlinks = document.querySelectorAll(".navlinks li");
 //modal
 
 // dialog
-const emDialog = document.getElementById("emDialog");
-const bookingBtn = document.getElementById("bookingBtn")
-// const confirmBtn = emDialog.querySelector("#confirmBtn");
+// const emDialog = document.getElementById("emDialog");
+// const bookingBtn = document.getElementById("bookingBtn")
 
-setTimeout(() => {
-    emDialog.showModal()
-},500);
+// setTimeout(() => {
+//     emDialog.showModal()
+// },500);
 
-bookingBtn.addEventListener("click", function(e){
-    e.preventDefault();
-    emDialog.close();
-    console.log("close");
-});
+// bookingBtn.addEventListener("click", function(e){
+//     e.preventDefault();
+//     emDialog.close();
+//     console.log("close");
+// });
 
 // confirmBtn.addEventListener("click", (event) => {
 //   event.preventDefault(); 
@@ -29,21 +28,21 @@ bookingBtn.addEventListener("click", function(e){
 
 //countdown
 
-var countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
-var x = setInterval(function(){
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
+// var countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
+// var x = setInterval(function(){
+//     var now = new Date().getTime();
+//     var distance = countDownDate - now;
 
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-},1000);
+//     document.getElementById("days").innerHTML = days;
+//     document.getElementById("hours").innerHTML = hours;
+//     document.getElementById("minutes").innerHTML = minutes;
+//     document.getElementById("seconds").innerHTML = seconds;
+// },1000);
 
 //sidebar
 

@@ -85,7 +85,7 @@ body {
 
 /* ------------ DIALOG POPUP ------------------ */
 
-dialog {
+/* dialog {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -109,7 +109,7 @@ dialog {
 .cancelBtn {
     border: none;
     background: none;
-}
+} */
 
 /* .confirmbutton {
     display: none;
@@ -122,7 +122,7 @@ dialog {
     font-size: 15px;
 } */
 
-.dlg-btn i {
+/* .dlg-btn i {
     display: flex;
     position: fixed;
     top: 1rem;
@@ -230,7 +230,7 @@ dialog {
 .mbtn:hover {
     background-position: left center;
     color: rgb(0 0 0 / 0.8);
-}
+} */
 
 /* dialog form {
     display: flex;
@@ -264,11 +264,11 @@ form input {
 
 .logo.header img {
     /* width: 15vw; */
-    width: 20vw;
+    width: 16vw;
     height: auto;
 }
 
-.boat-header {
+/* .boat-header {
     display: flex;
     align-items: center;
     padding: 50px 0 20px 0;
@@ -279,7 +279,7 @@ form input {
     height: 14vw;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-}
+} */
 
 /* ------------ NAVBAR ------------ */
 
